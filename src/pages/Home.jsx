@@ -18,7 +18,7 @@ const Home = () => {
   const { data: userData } = useGetUsersQuery();
 
   React.useEffect(() => {
-    updateTitle(`${userData.name} | Portfolio`);
+    updateTitle(`${userData.name}`);
   }, [userData]);
 
   return (
@@ -30,7 +30,7 @@ const Home = () => {
           bio={userData.bio}
           moreInfo={moreInfo}
         />
-        <Skills />
+        {/* <Skills /> */}
         <Projects filteredProjects={filteredProjects} />
         <Contact />
       </main>

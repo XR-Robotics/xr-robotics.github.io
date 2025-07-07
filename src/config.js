@@ -5,17 +5,20 @@ import { Icon } from "@iconify/react";
 // import newLogo from "./images/yourFileName"
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import HeroLight from "./images/hero-light.png";
+import HeroDark from "./images/hero-dark.png";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+import PCServiceLogo from "./images/pc-service.png";
+import UnityClientLogo from "./images/unity-client.png";
+import PythonTeleopLogo from "./images/python-teleop.png";
 
 /* START HERE
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "XR-Robotics";
 
 // Navbar Logo image
 export const navLogo = null;
@@ -35,7 +38,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "XR Robotics is an open-source initiative for developers and professionals in XR, robotics, and AI. We provide XRoboToolkit, a suite of cross-device SDKs, frameworks, and sample applications that enable real-time remote robot teleoperation through XR devices.";
 
 /* Skills
  ************************************************************** 
@@ -96,13 +99,23 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["XRoboToolkit-Teleop-Sample-Python", "XRoboToolkit-Unity-Client", "XRoboToolkit-PC-Service"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "XRoboToolkit-Teleop-Sample-Python",
+    image: PythonTeleopLogo,
+  },
+
+  {
+    name: "XRoboToolkit-Unity-Client",
+    image: UnityClientLogo,
+  },
+
+  {
+    name: "XRoboToolkit-PC-Service",
+    image: PCServiceLogo,
   },
 ];
 
@@ -111,7 +124,7 @@ export const projectCardImages = [
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/mqabvelp";
 
 // Footer icons theme (light or dark)
 export const footerTheme = "dark";

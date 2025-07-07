@@ -33,12 +33,12 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
       <StyledAboutMe className="section">
         <Container>
           <Container className="d-flex justify-content-center">
-            <Title size={"h2"} text={"About Me"} />
+            <Title size={"h2"} text={"About"} />
           </Container>
           <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column text-center">
               <Container>
-                {bio && <p>{bio}</p>}
+                {/* {bio && <p>{bio}</p>} */}
                 {moreInfo && <p>{moreInfo}</p>}
               </Container>
             </Col>

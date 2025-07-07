@@ -17,11 +17,11 @@ const StyledCard = styled.div`
     border: var(--border);
     transition: all 0.2s ease-in-out;
     background: ${({ theme }) =>
-      theme.name === "light" ? "" : "var(--bs-gray)"};
+    theme.name === "light" ? "" : "var(--bs-gray)"};
     box-shadow: ${({ theme }) =>
-      theme.name === "light"
-        ? "0 3px 10px rgb(0 0 0 / 0.2)"
-        : "0 3px 10px rgb(255 255 255 / 0.2)"};
+    theme.name === "light"
+      ? "0 3px 10px rgb(0 0 0 / 0.2)"
+      : "0 3px 10px rgb(255 255 255 / 0.2)"};
 
     .card-img-top {
       height: 50%;
@@ -34,18 +34,18 @@ const StyledCard = styled.div`
 
       &:hover {
         color: ${({ theme }) =>
-          theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
+    theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
       }
     }
 
     .card-footer {
       border-top: var(--border);
       background: ${({ theme }) =>
-        theme.name === "light" ? "" : "var(--bs-gray-dark)"};
+    theme.name === "light" ? "" : "var(--bs-gray-dark)"};
 
       .card-link {
         color: ${({ theme }) =>
-          theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
+    theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
 
         &:hover {
           color: var(--bs-primary);
@@ -82,12 +82,12 @@ const ProjectCard = ({ demo, description, image, name, url }) => {
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          {demo !== (undefined && null && "") ? (
+          {/* {demo !== (undefined && null && "") ? (
             <Card.Link href={demo}>
               {"Live Demo "}
               <Icon icon="icon-park-outline:code-computer" />
             </Card.Link>
-          ) : null}
+          ) : null} */}
         </Card.Body>
         <Card.Footer className="text-center">
           <Card.Link href={url}>

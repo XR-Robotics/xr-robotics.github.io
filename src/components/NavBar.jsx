@@ -16,15 +16,15 @@ import ThemeToggle from "./ThemeToggle";
 // #region constants
 const navLinks = {
   routes: [
-    { id: "1R", name: "Home", route: "/" },
-    { id: "2R", name: "All Projects", route: "/All-Projects" },
+    // { id: "1R", name: "Home", route: "/" },
+    // { id: "2R", name: "All Projects", route: "/All-Projects" },
   ],
   to: [
-    { id: "1T", name: "Home", to: "Home" },
-    { id: "2T", name: "About Me", to: "About" },
-    { id: "3T", name: "Skills", to: "Skills" },
-    { id: "4T", name: "Projects", to: "Projects" },
-    { id: "5T", name: "Contact", to: "Contact" },
+    // { id: "1T", name: "Home", to: "Home" },
+    // { id: "2T", name: "About Me", to: "About" },
+    // { id: "3T", name: "Skills", to: "Skills" },
+    // { id: "4T", name: "Projects", to: "Projects" },
+    // { id: "5T", name: "Contact", to: "Contact" },
   ],
 };
 // #endregion
@@ -41,7 +41,7 @@ const StyledDiv = styled.div`
 
   .logo-img {
     background: ${({ theme }) =>
-      theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
+    theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
   }
 `;
 // #endregion
@@ -88,45 +88,45 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
             <Nav navbarScroll className="me-auto">
               {pathname === "/"
                 ? navLinks.to.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <ScrollLink
-                          to={el.to}
-                          spy={true}
-                          activeClass="active"
-                          className="nav-link"
-                          onClick={() => {
-                            setTimeout(() => {
-                              setisExpanded(false);
-                            }, closeDelay);
-                          }}
-                        >
-                          {el.name}
-                        </ScrollLink>
-                      </Nav.Item>
-                    );
-                  })
+                  return (
+                    <Nav.Item key={el.id}>
+                      <ScrollLink
+                        to={el.to}
+                        spy={true}
+                        activeClass="active"
+                        className="nav-link"
+                        onClick={() => {
+                          setTimeout(() => {
+                            setisExpanded(false);
+                          }, closeDelay);
+                        }}
+                      >
+                        {el.name}
+                      </ScrollLink>
+                    </Nav.Item>
+                  );
+                })
                 : navLinks.routes.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <Link
-                          to={el.route}
-                          className={
-                            pathname === el.route
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                          onClick={() => {
-                            setTimeout(() => {
-                              setisExpanded(false);
-                            }, closeDelay);
-                          }}
-                        >
-                          {el.name}
-                        </Link>
-                      </Nav.Item>
-                    );
-                  })}
+                  return (
+                    <Nav.Item key={el.id}>
+                      <Link
+                        to={el.route}
+                        className={
+                          pathname === el.route
+                            ? "nav-link active"
+                            : "nav-link"
+                        }
+                        onClick={() => {
+                          setTimeout(() => {
+                            setisExpanded(false);
+                          }, closeDelay);
+                        }}
+                      >
+                        {el.name}
+                      </Link>
+                    </Nav.Item>
+                  );
+                })}
             </Nav>
             <Nav>
               <ThemeToggle
