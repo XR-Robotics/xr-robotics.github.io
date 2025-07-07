@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3612727.css",
+    "main.js": "/static/js/main.a2ba622d.js",
+    "static/media/hero-dark.png": "/static/media/hero-dark.4363c62a9973a920e15a.png",
+    "static/media/hero-light.png": "/static/media/hero-light.7243ee469be0f8b4e324.png",
+    "static/media/unity-client.png": "/static/media/unity-client.fc63071964ba42edfa76.png",
+    "service-worker.js": "/service-worker.js",
+    "static/media/python-teleop.png": "/static/media/python-teleop.e2edd0177d8610bc10a1.png",
+    "static/media/GH.svg": "/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
+    "static/media/defaultNavLogo.svg": "/static/media/defaultNavLogo.2ba523c6d343075ec0f2415737807779.svg",
+    "static/media/logo.svg": "/static/media/logo.2ba523c6d343075ec0f2415737807779.svg",
+    "index.html": "/index.html",
+    "main.f3612727.css.map": "/static/css/main.f3612727.css.map",
+    "main.a2ba622d.js.map": "/static/js/main.a2ba622d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3612727.css",
+    "static/js/main.a2ba622d.js"
+  ]
+}
