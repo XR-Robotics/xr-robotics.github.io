@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="./favicon.ico"/>
+    <link rel="icon" href="./favicon.ico" />
     <meta name="description" content="XRoboToolkit: A Cross-Platform Framework for Robot Teleoperation">
     <meta name="keywords" content="XRoboToolkit, XR, Robotics, Teleoperation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +34,32 @@
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="icon" href="./static/images/favicon.svg">
 
+    <style>
+        .award-badge {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            border: 2px solid #ffc107;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #d4a017;
+            box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+        }
+
+        .award-badge a {
+            color: #b8860b;
+            text-decoration: none;
+        }
+
+        .award-badge a:hover {
+            color: #8b6914;
+            text-decoration: underline;
+        }
+    </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
@@ -43,193 +69,209 @@
 
 <body>
 
-<section class="hero">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <h1 class="title is-1 publication-title">XRoboToolkit: A Cross-Platform Framework for Robot
-                        Teleoperation
-                    </h1>
-                    <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href=" https://scholar.google.com/citations?user=0813VhIAAAAJ&hl=en">Zhigen
-                  Zhao</a><sup>1,2</sup>,</span>
-                        <span class="author-block">
-                <a href="https://www.chuange.org/">Liuchuan Yu</a><sup>1,3</sup>,</span>
-                        <span class="author-block">
-                <a href="https://www.linkedin.com/in/kejing/">Ke Jing</a><sup>1</sup>,
-              </span>
-                        <span class="author-block">
-                <a href="https://www.linkedin.com/in/ning-yang-ph-d-01817956/">Ning Yang</a><sup>1</sup>
-              </span>
-                    </div>
-
-                    <div class="is-size-6 publication-authors">
-                        <span class="author-block"><sup></sup>Corresponding to Ke Jing (ke.jing@bytedance.com), Ning Yang (yangning726@gmail.com)</span>
-                    </div>
-
-                    <div class="is-size-5 institutions">
-              <span class="author-block"><sup>1</sup> <img src="./static/images/logo/pico.svg"
-                                                           style="height: 80px; vertical-align: middle; margin-right: 12px;"></span>
-                        <span class="author-block"><sup>2</sup> <img src="./static/images/logo/gt.svg"
-                                                                     style="height: 80px; vertical-align: middle; margin-right: 12px;"></span>
-                        <span class="author-block"><sup>3</sup><img src="./static/images/logo/gmu.png"
-                                                                    style="height: 80px; vertical-align: middle; margin-right: 12px; margin-left: 5px;"></span>
-                    </div>
-
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2508.00097" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-                            <!-- PDF Link. -->
-                            <span class="link-block">
-                  <a href="./static/pdfs/2508.00097v1.pdf" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>PDF</span>
-                  </a>
-                </span>
-                            <span class="link-block">
-                  <a href="https://github.com/XR-Robotics" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Github</span>
-                  </a>
-                </span>
-                            <span class="link-block">
-                  <a href="https://www.youtube.com/@XRRobotics"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Youtube</span>
-                  </a>
-                </span>
-                            <span class="link-block">
-                  <a href="https://discord.gg/QgYTtT7xfA" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-discord"></i>
-                    </span>
-                    <span>Discord</span>
-                  </a>
-                </span>
+                        <h1 class="title is-1 publication-title">XRoboToolkit: A Cross-Platform Framework for Robot
+                            Teleoperation
+                        </h1>
+                        <div class="award-badge">
+                            <a href="https://sice-si.org/SII2026/awards/" target="_blank">
+                                🏆 Best Paper Award, SII 2026
+                            </a>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href=" https://scholar.google.com/citations?user=0813VhIAAAAJ&hl=en">Zhigen
+                                    Zhao</a><sup>1,2</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://www.chuange.org/">Liuchuan Yu</a><sup>1,3</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/kejing/">Ke Jing</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/ning-yang-ph-d-01817956/">Ning Yang</a><sup>1</sup>
+                            </span>
                         </div>
 
+                        <div class="is-size-6 publication-authors">
+                            <span class="author-block"><sup></sup>Corresponding to Ke Jing (ke.jing@bytedance.com), Ning
+                                Yang (yangning726@gmail.com)</span>
+                        </div>
+
+                        <div class="is-size-5 institutions">
+                            <span class="author-block"><sup>1</sup> <img src="./static/images/logo/pico.svg"
+                                    style="height: 80px; vertical-align: middle; margin-right: 12px;"></span>
+                            <span class="author-block"><sup>2</sup> <img src="./static/images/logo/gt.svg"
+                                    style="height: 80px; vertical-align: middle; margin-right: 12px;"></span>
+                            <span class="author-block"><sup>3</sup><img src="./static/images/logo/gmu.png"
+                                    style="height: 80px; vertical-align: middle; margin-right: 12px; margin-left: 5px;"></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2508.00097"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="./static/pdfs/2508.00097v2.pdf"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>PDF</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://github.com/XR-Robotics"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Github</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com/@XRRobotics"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Youtube</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://discord.gg/QgYTtT7xfA"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-discord"></i>
+                                        </span>
+                                        <span>Discord</span>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="hero teaser">
-    <div class="container is-max-desktop">
-        <div class="hero-body">
-            <img src="./static/images/overview.png">
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Abstract</h2>
-                <div class="content has-text-justified">
-                    The rapid advancement of Vision-Language-Action models has created an urgent need for large-scale,
-                    high-quality robot demonstration datasets. Although teleoperation is the predominant method for data
-                    collection, current approaches suffer from limited scalability, complex setup procedures, and
-                    suboptimal data quality. This paper presents XRoboToolkit, a cross-platform framework for extended
-                    reality-based robot teleoperation built on the OpenXR standard. The system features low-latency
-                    stereoscopic visual feedback, optimization-based inverse kinematics, and support for diverse
-                    tracking modalities, including head, controller, hand, and auxiliary motion trackers. XRoboToolkit's
-                    modular architecture enables seamless integration across robotic platforms and simulation
-                    environments, spanning precision manipulators, mobile robots, and dexterous hands. We demonstrate
-                    the framework's effectiveness through precision manipulation tasks and validate data quality by
-                    training VLA models that exhibit robust autonomous performance.
-                </div>
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <img src="./static/images/overview.png">
             </div>
         </div>
-        <!--/ Abstract. -->
+    </section>
 
-        <!-- Paper video. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Video</h2>
-                <div class="publication-video">
-                    <iframe src="https://www.youtube.com/embed/g6QJX2s-RCo?rel=0&amp;showinfo=0" frameborder="0"
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        The rapid advancement of Vision-Language-Action models has created an urgent need for
+                        large-scale,
+                        high-quality robot demonstration datasets. Although teleoperation is the predominant method for
+                        data
+                        collection, current approaches suffer from limited scalability, complex setup procedures, and
+                        suboptimal data quality. This paper presents XRoboToolkit, a cross-platform framework for
+                        extended
+                        reality-based robot teleoperation built on the OpenXR standard. The system features low-latency
+                        stereoscopic visual feedback, optimization-based inverse kinematics, and support for diverse
+                        tracking modalities, including head, controller, hand, and auxiliary motion trackers.
+                        XRoboToolkit's
+                        modular architecture enables seamless integration across robotic platforms and simulation
+                        environments, spanning precision manipulators, mobile robots, and dexterous hands. We
+                        demonstrate
+                        the framework's effectiveness through precision manipulation tasks and validate data quality by
+                        training VLA models that exhibit robust autonomous performance.
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/g6QJX2s-RCo?rel=0&amp;showinfo=0" frameborder="0"
                             allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
+            <!--/ Paper video. -->
         </div>
-        <!--/ Paper video. -->
-    </div>
-</section>
+    </section>
 
 
-<section class="section">
-    <div class="container is-max-desktop">
+    <section class="section">
+        <div class="container is-max-desktop">
 
-        <!-- Applications -->
-        <div class="columns is-centered">
-            <div class="column is-full-width">
-                <h2 class="title is-3">Applications</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        Example applications of XRoboToolkit: (a) teleoperation with XR controllers for dual arm
-                        manipulation and
-                        mobile manipulators, (b) Dual UR5 manipulators with 2-DOF head tracking and stereo vision, (c)
-                        auxiliary
-                        motion trackers for robot elbow control in MeshCat visualization, and (d) dexterous hand
-                        tracking in
-                        Mujoco simulation.
-                    </p>
-                    <img src="./static/images/applications.jpg">
+            <!-- Applications -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Applications</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Example applications of XRoboToolkit: (a) teleoperation with XR controllers for dual arm
+                            manipulation and
+                            mobile manipulators, (b) Dual UR5 manipulators with 2-DOF head tracking and stereo vision,
+                            (c)
+                            auxiliary
+                            motion trackers for robot elbow control in MeshCat visualization, and (d) dexterous hand
+                            tracking in
+                            Mujoco simulation.
+                        </p>
+                        <img src="./static/images/applications.jpg">
+                    </div>
                 </div>
             </div>
+
         </div>
-
-    </div>
-</section>
+    </section>
 
 
-<section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@article{zhao2025xrobotoolkit,
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{zhao2025xrobotoolkit,
       title={XRoboToolkit: A Cross-Platform Framework for Robot Teleoperation}, 
       author={Zhigen Zhao and Liuchuan Yu and Ke Jing and Ning Yang}, 
       journal={arXiv preprint arXiv:2508.00097},
       year={2025}
 }</code></pre>
-    </div>
-</section>
+        </div>
+    </section>
 
 
-<footer class="footer">
-    <div class="container">
-        <div class="columns is-centered">
-            <div class="column is-8">
-                <div class="content has-text-centered">
-                    <p>
-                        Website template borrowed from <a
-                            href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>
-                    </p>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content has-text-centered">
+                        <p>
+                            Website template borrowed from <a
+                                href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 
